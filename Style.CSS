@@ -1,0 +1,100 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Light blue background */
+    color: #333; /* Darker text for good contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    color: #004e89; /* Deep blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0074cc; /* Bright blue */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Fieldset for Buttons */
+fieldset#first_row_of_buttons {
+    border: 2px solid #004e89; /* Deep blue */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for contrast */
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #004e89; /* Deep blue */
+    padding: 0 10px;
+}
+
+/* Button Styles */
+input[type="button"] {
+    background-color: #004e89; /* Deep blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+input[type="button"]:hover {
+    background-color: #0074cc; /* Bright blue on hover */
+}
+
+input[type="button"]:active {
+    background-color: #002f5f; /* Darker blue on click */
+}
+
+/* Embed Content */
+div.content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tableau-viz {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="button"] {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    fieldset#first_row_of_buttons {
+        padding: 15px;
+        max-width: 100%;
+    }
+}
